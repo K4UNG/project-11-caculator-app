@@ -1,8 +1,9 @@
 const toggle = document.querySelector('.toggle');
 const circle = document.querySelector('.switch');
 const buttons = document.querySelectorAll('.number-pad>button');
-let sound = new Audio('./button.wav'), sound2 = new Audio('./theme.wav')
-sound2.volume = .25;
+let sound = new Audio('./button.wav')
+let sound2 = new Audio('./theme.wav')
+sound2.volume = .5;
 
 
 let current = ''
