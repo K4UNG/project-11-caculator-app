@@ -20,19 +20,24 @@ const mathCalc = {
     '/': function(x, y) { return x / y }
 }
 
+setTheme();
+
 function switchTheme() {
     if (circle.classList.contains('theme-2')) {
         circle.classList.replace('theme-2', 'theme-3');
+        localStorage.setItem('theme', 3);
 
         document.body.classList.replace('second', 'third');
     }
     else if (circle.classList.contains('theme-3')) {
         circle.classList.remove('theme-3');
+        localStorage.setItem('theme', 1);
 
         document.body.classList.remove('third');
     }
     else {
         circle.classList.add('theme-2');
+        localStorage.setItem('theme', 2);
 
         document.body.classList.add('second')
     }
@@ -176,4 +181,19 @@ function readCalculate(nums) {
             }
         }
     });
+}
+
+function setTheme() {
+    let theme = localStorage.getItem('theme');
+    if (theme === null) {
+        theme = 1;
+    }
+    console.log(theme)
+    if (theme == 2) {
+        circle.classList.add('theme-2');
+        document.body.classList.add('second');
+    } else if (theme == 3) {
+        circle.classList.add('theme-3');
+        document.body.classList.add('third');
+    }
 }
