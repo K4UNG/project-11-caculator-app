@@ -300,3 +300,13 @@ main {
         margin: 3em 0;
     }
 }
+
+@media (max-width: 500px) {
+    main {
+        max-width: 350px;
+    }
+
+    .header {
+        max-width: 350px;
+    }
+}
