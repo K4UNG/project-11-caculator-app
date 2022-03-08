@@ -131,6 +131,7 @@ main {
 }
 
 .numbers {
+    display: block;
     width: 80%;
     position: absolute;
     bottom: 70%;
@@ -149,6 +150,7 @@ main {
 }
 
 .switch {
+    display: block;
     width: 15px;
     height: 15px;
     background: var(--red-key);
