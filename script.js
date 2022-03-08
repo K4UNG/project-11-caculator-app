@@ -1,6 +1,9 @@
 const toggle = document.querySelector('.toggle');
 const circle = document.querySelector('.switch');
 const buttons = document.querySelectorAll('.number-pad>button');
+let sound = new Audio('./button.wav'), sound2 = new Audio('./theme.wav')
+sound2.volume = .25;
+
 
 let current = ''
 let dotted = false;
@@ -34,10 +37,11 @@ function switchTheme() {
     }
 }
 
-toggle.onclick = () => { switchTheme(); removePress();};
+toggle.onclick = () => { sound2.play(); switchTheme(); removePress();};
 
 buttons.forEach( btn => {
     btn.onclick = () => {
+        sound.play();
         removePress();
         btn.childNodes[0].classList.add('pressed');
         addDisplay(btn);
