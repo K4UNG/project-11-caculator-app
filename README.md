@@ -43,4 +43,4 @@ Users should be able to:
 
 ### What I learned
 
-This is now my favorite frontendmentor challenge. It was very fun doing this and I thought the logic for this was gonna be very easy but it turned out to be tricker than I expected. Overall, it was a really fun experience and I learned a lot especially about JavaScript methods.
+This is now my favorite frontendmentor challenge. It was very fun doing this and I thought the logic for this was gonna be very easy but it turned out to be trickier than I expected. Overall, it was a really fun experience and I learned a lot especially about JavaScript methods.
