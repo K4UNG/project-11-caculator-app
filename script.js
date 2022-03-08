@@ -48,8 +48,10 @@ buttons.forEach( btn => {
         }
 
         if (btn.dataset.key === '=') {
-            calculate();
-            current = ''
+            if (display.textContent != 0) {
+                calculate();
+                current = ''
+            }
         }
     }
 });
